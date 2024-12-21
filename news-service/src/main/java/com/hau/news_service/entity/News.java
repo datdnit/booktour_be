@@ -23,7 +23,9 @@ public class News {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
+    private String name;
+    private String preview;
+    private String image;
     private String content;
-    private LocalDate publishedDate;
+    private String slug;
 }

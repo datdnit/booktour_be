@@ -7,20 +7,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "eventPromotion")
-public class EventPromotion {
+@Table(name = "endow")
+public class Endow {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
-    private String description;
-    private LocalDate startDate;
-    private LocalDate endDate;
-    private Double discount;
+    private String image;
+    private String content;
+    private String slug;
 }
